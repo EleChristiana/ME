@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@media screen {
+    
+}
+  
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0 15px 15px;
+}
+
+.container nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo i{
+    color: #7d7b7f;
+    font-size: 28px;
+}
+
+nav .logo h1{
+    color:#4444;
+    font-size: 28px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+    height: 80px;
+    position: relative;
+    line-height:  80px;
+    cursor: pointer;
+}
+
+nav ul li::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #79bccf;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s;
+}
+
+nav ul li:hover::after
+nav ul li.active::after{
+    width: 100%;
+   
+}
+
+nav ul li a{
+    color: #7777;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li .active a{
+    color: #7d7b7f;
+}
+
+.container .content{
+    width: 100%;
+    height: calc(100vh - 95px);
+    background: linear-gradient(130deg, #e5e1f9, #febfcf);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.content .div-img img{
+   width: 250px;
+}
+
+.content .div-text span{
+    color: #ffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+}
+
+
+.content .div-text h3{
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 20px 0 8px;
+    color: black;
+}
+
+.content .div-text h1{
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: black;
+    margin-bottom: 25px;   
+}
+
+.content .div-text p{
+    color:gray;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing:1.3px;
+    margin-bottom: 55px;
+}
+
+.content .div-text .btn{
+   padding: 15px 35px;
+   background-color: #ffff;
+   color: #79bccf;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 30px;
+   transition: 0.3s;
+}
+
+.content .div-text .btn:hover{
+    color: #ffff;
+    background-color: #79bccf;
+    
+}
+
+.content .small-img{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transition: translateX(-50%);
+    display: flex;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.content .small-img img{
+    width: 70px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.content .small-img img:hover{
+    transform: scale(0,1);
+}
+
+.h2-tag{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    color: #7777;
+}
+
+.text-p{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -200px;
+    margin-right: 40px;
+    line-height: 30px;
+    color: #7d7b7f;
+    
+}
+
+.about-img{
+    width: 356px;
+    height: 330px;
+}
+
+.sec-container{
+    border: 2px solid #febfcf;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 60px;
+    background: linear-gradient(130deg, #e5e1f9, #febfcf);
+    width: 100%;
+    height: 100vh;
+}
+#img-1{
+    width: 356px;
+    height: 330px;
+    padding-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    bottom: -80px;
+    
+}
+
+#img-2{
+    display: flex;
+    justify-content: center;
+    width: 356px;
+    height: 330px;
+    position: relative;
+    left: 500px;
+    bottom: -820px;
+    
+}
+
+#img-3{
+    width: 356px;
+    height: 330px;
+    padding-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    left: 950px;
+    bottom: -470px;
+}
+@media (max-width:1500px) {
+    
+
+body{
+    background-color: aqua;
+}
+}
+.h-shop{
+    display: flex;
+    justify-content: center;
+    color: #7d7b7f;
+    margin-top: 40px;
+}
+@media (max-width:1250px) and (min-width: 800px ){
+    
+.sec-container2{
+    border: 2px solid #febfcf;
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    background: linear-gradient(130deg, #e5e1f9, #febfcf);
+}
+
+}
